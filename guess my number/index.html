@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+
+      <p>
+        if the game have any problem please send it to this e-mail :
+        parsa.farahani84@gmail.com
+      </p>
+      <br />
+      <br />
+      <br />
+      <p>
+        OK! so this is the rules : so welcome to MY game! this is all you have
+        to know : you have to guess a randome number that game choosen__ you can
+        use the game help -- lowe number and high number -- to guess faster :)
+        every time that you guess wrong you loos one score! so whatch out. every
+        person that have higher highscore wins! if you want to play again just
+        hit again button __ GOOD LUCK!
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+
+      <button class="btn again">Again!</button>
+      <button class="me btn report">report!</button>
+      <button class="me btn rules">rules!</button>
+      <div class="number">?</div>
+    </header>
+
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
